@@ -1,0 +1,24 @@
+﻿<Window x:Class="LabourExchange.CreateUpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:LabourExchange"
+        mc:Ignorable="d"
+        Title="CreateUpdateWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Model Editor" FontWeight="Bold" Margin="5" />
+            <StackPanel HorizontalAlignment="Center" x:Name="EditPanel"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button Content="Save" Width="100" Margin="5" Click="SaveButton_Click" />
+            <Button Content="Delete" Width="100" Margin="5" Click="DeleteButton_Click" />
+            <Button Content="Close" Width="100" Margin="5" Click="CloseEditPanel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
